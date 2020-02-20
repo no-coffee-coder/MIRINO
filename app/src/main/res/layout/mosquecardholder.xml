@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mosquename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SampleMosqueName"
+            android:textSize="25sp"
+            android:textColor="@color/colorGolden"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mosquearea"
+            android:layout_toEndOf="@id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SampleMosqueArea"
+            android:textSize="15sp"
+            android:textColor="@color/colorGolden" />
+        <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area :"
+        android:textSize="15sp"
+        android:textColor="@color/colorGolden"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+            <TextView
+                android:id="@+id/namaztimings"
+                android:layout_below="@id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Namaz Timings :"
+                android:textColor="@color/colorGolden"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"/>
+            <TextView
+                android:id="@+id/Fajr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namaztimings"
+                android:text="@string/fajr"
+                android:textColor="@color/colorGolden"
+                android:textStyle="bold"
+                android:paddingStart="50dp" />
+            <TextView
+                android:id="@+id/FajrTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Fajr"
+                android:layout_below="@id/namaztimings"
+                android:text="5.50 AM"
+                android:textColor="@color/colorGolden" />
+            <TextView
+                android:id="@+id/Zohar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Fajr"
+                android:text="Zohar :"
+                android:textColor="@color/colorGolden"
+                android:textStyle="bold"
+                android:paddingStart="50dp" />
+            <TextView
+                android:id="@+id/ZoharTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Zohar"
+                android:layout_below="@id/FajrTime"
+                android:text="1.30 PM"
+                android:textColor="@color/colorGolden" />
+            <TextView
+                android:id="@+id/Asr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Zohar"
+                android:text="Asr :"
+                android:textColor="@color/colorGolden"
+                android:textStyle="bold"
+                android:paddingStart="50dp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/AsrTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Asr"
+                android:layout_below="@id/ZoharTime"
+                android:text="5.30 PM"
+                android:textColor="@color/colorGolden" />
+            <TextView
+                android:id="@+id/Maghrib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Asr"
+                android:text="Maghrib :"
+                android:textColor="@color/colorGolden"
+                android:textStyle="bold"
+                android:paddingStart="50dp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/MaghribTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Maghrib"
+                android:layout_below="@id/AsrTime"
+                android:text="7.00 PM"
+                android:textColor="@color/colorGolden" />
+            <TextView
+                android:id="@+id/Isha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Maghrib"
+                android:text="Isha :"
+                android:textColor="@color/colorGolden"
+                android:textStyle="bold"
+                android:paddingStart="50dp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/IshaTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/Isha"
+                android:layout_below="@id/MaghribTime"
+                android:text="8.45 PM"
+                android:textColor="@color/colorGolden" />
+            <TextView
+                android:id="@+id/juma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Isha"
+                android:text="@string/jumu_ah"
+                android:textColor="@color/colorGolden"
+                android:textStyle="bold"
+                android:paddingStart="50dp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/jumaTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/juma"
+                android:layout_below="@id/IshaTime"
+                android:text="8.45 PM"
+                android:textColor="@color/colorGolden" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+</LinearLayout>

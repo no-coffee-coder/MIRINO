@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "1035068632342",
+    "firebase_url": "https://mirino-21b1e.firebaseio.com",
+    "project_id": "mirino-21b1e",
+    "storage_bucket": "mirino-21b1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035068632342:android:d6cbcecaab703e6b",
+        "android_client_info": {
+          "package_name": "com.larebshaikh.mirino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035068632342-idnsjb123rhurg3uff4scu7vsqgkacvf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.larebshaikh.mirino",
+            "certificate_hash": "24f96fbfbd023b3a32a6292a956a872ac35d9096"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFWLXznwHWkJau62xltBP9K-rUkLbQNJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035068632342-g9h03nii9abki39pdkj6epuek6mlv1gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

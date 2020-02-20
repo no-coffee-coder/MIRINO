@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/gotoReadLayout"
+        app:showAsAction="never"
+        android:title="@string/read_quran" />
+
+    <item
+        android:id="@+id/gotoAddMosque"
+        app:showAsAction="never"
+        android:title="@string/request_to_add_mosque"/>
+    <item
+        android:id="@+id/gotoMyProfile"
+        app:showAsAction="never"
+        android:title="@string/my_profile"/>
+    <item
+        android:id="@+id/gotoChangePassword"
+        app:showAsAction="never"
+        android:title="@string/change_password"/>
+
+    <item
+        android:id="@+id/Logout"
+        app:showAsAction="never"
+        android:title="@string/logout" />
+
+
+</menu>

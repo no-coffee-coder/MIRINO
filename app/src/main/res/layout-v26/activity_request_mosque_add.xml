@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestMosqueAdd">
+    <include
+        layout="@layout/usertoolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="56dp">
+        <RelativeLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/etMosqueName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_mosque_name"
+            android:inputType=""
+            android:importantForAutofill="no" tools:targetApi="o"/>
+
+        <EditText
+            android:id="@+id/etMosqueArea"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/etMosqueName"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mosque Area" />
+
+            <EditText
+                
+                android:id="@+id/etFajrTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvnamztiming"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@id/tvfajar"
+                android:hint="@string/hh_mm_am_pm"
+                android:inputType=""
+                android:importantForAutofill="no" tools:targetApi="o"/>
+
+    <EditText
+        android:id="@+id/etZoharTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="0dp"
+        android:layout_below="@id/etFajrTime"
+        android:layout_toEndOf="@id/tvzohar"
+        android:hint="@string/hh_mm_am_pm" />
+
+    <EditText
+        android:id="@+id/etAsrTIme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="0dp"
+        android:layout_below="@id/etZoharTime"
+        android:layout_toEndOf="@id/tvasr"
+        android:hint="@string/hh_mm_am_pm"
+        android:inputType=""
+        android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/etMaghribTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etAsrTIme"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tvmaghrib"
+                android:hint="@string/hh_mm_am_pm"
+                android:importantForAutofill="no"
+                android:inputType="" />
+
+            <EditText
+                android:id="@+id/etIshaTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etMaghribTime"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tvisha"
+                android:hint="@string/hh_mm_am_pm"
+                android:importantForAutofill="no"
+                android:inputType="" />
+
+            <EditText
+                android:id="@+id/etJumaTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etIshaTime"
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tvjuma"
+                android:hint="@string/hh_mm_am_pm"
+                android:inputType=""
+                android:importantForAutofill="no" tools:targetApi="o"/>
+
+    <TextView
+        android:id="@+id/tvnamztiming"
+        android:layout_below="@id/etMosqueArea"
+        android:textSize="25sp"
+        android:textColor="@color/colorGolden"
+        android:layout_marginStart="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_namaz_timings" />
+
+    <TextView
+        android:id="@+id/tvfajar"
+        android:textColor="@color/colorGolden"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvnamztiming"
+        android:text="Fajr" />
+
+    <TextView
+        android:id="@+id/tvzohar"
+        android:textColor="@color/colorGolden"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvfajar"
+        android:text="@string/zohar" />
+
+            <TextView
+                android:id="@+id/tvasr"
+                android:textColor="@color/colorGolden"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvzohar"
+                android:text="@string/asr" />
+
+    <TextView
+        android:id="@+id/tvmaghrib"
+        android:textColor="@color/colorGolden"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvasr"
+        android:text="@string/maghrib" />
+
+    <TextView
+        android:id="@+id/tvisha"
+        android:textColor="@color/colorGolden"
+        android:layout_marginStart="25dp"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvmaghrib"
+        android:text="@string/isha" />
+
+    <TextView
+        android:id="@+id/tvjuma"
+        android:textColor="@color/colorGolden"
+        android:layout_marginStart="25dp"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvisha"
+        android:text="@string/juma_ah" />
+
+
+            <Button
+                android:id="@+id/btnrequestmosqueadd"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etJumaTime" />
+
+
+</RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
