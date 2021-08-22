@@ -85,4 +85,7 @@
     <string name="click_on_list_to_remove_user">Click on List to Remove User</string>
     <string name="Reset_password">Change Password</string>
     <string name="read_quran">Read Quran.</string>
+    <string name="please_choose_option_to_proceed">Please Choose Option to Proceed</string>
+    <string name="church">Church</string>
+    <string name="temple">Temple</string>
 </resources>

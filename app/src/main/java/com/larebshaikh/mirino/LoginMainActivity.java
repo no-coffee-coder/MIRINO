@@ -30,7 +30,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class LoginMainActivity extends AppCompatActivity {
+public class LoginMainActivity  extends AppCompatActivity {
 
 
     TextView gotoregister, gotoForgotPassword;
@@ -43,7 +43,7 @@ public class LoginMainActivity extends AppCompatActivity {
     private Toolbar mtoolbar;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_main);
 
@@ -76,7 +76,7 @@ public class LoginMainActivity extends AppCompatActivity {
                     }else if(Admin.equals("False")){
                         progressBar.setVisibility(View.GONE);
                         Toast.makeText(LoginMainActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(LoginMainActivity.this,MosqueSearchActivity.class));
+                        startActivity(new Intent(LoginMainActivity.this,ChooseFunctionActivity.class));
                         finish();
                     }else{
                         progressBar.setVisibility(View.GONE);
@@ -171,7 +171,7 @@ public class LoginMainActivity extends AppCompatActivity {
         String email=etUserName.getText().toString().trim();
         String Password=etPassword.getText().toString().trim();
 
-        Boolean result = false;
+        boolean result;
         if (email.isEmpty()) {
             etUserName.setError(getString(R.string.input_error_email));
             etUserName.requestFocus();
