@@ -69,11 +69,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
         // Add a marker in Sydney and move the camera
-        LatLng marker=new LatLng(18.9679, 72.8255);
+        LatLng marker=new LatLng(18.96189, 72.81679);
         mMap.addMarker(new MarkerOptions().position(marker).title("Current Location"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(marker));
         CameraPosition googlePlex = CameraPosition.builder()
-                .target(new LatLng(18.9679,72.8255))
+                .target(new LatLng(18.96189,72.81679))
                 .zoom(15)
                 .bearing(0)
                 .tilt(45)

@@ -124,7 +124,9 @@ public class LoginMainActivity extends AppCompatActivity {
         );
     }
     private void validate(String userName,String userPassword) {
+        btnLogin.setVisibility(View.GONE);
         progressBar.setVisibility(View.VISIBLE);
+
         mAuth.signInWithEmailAndPassword(userName, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -147,6 +149,7 @@ public class LoginMainActivity extends AppCompatActivity {
                                 finish();
                             }else{
                                 progressBar.setVisibility(View.GONE);
+                                btnLogin.setVisibility(View.VISIBLE);
                                 Toast.makeText(LoginMainActivity.this, "Incorrect UserEmail or Password", Toast.LENGTH_SHORT).show();
                             }
                         }
@@ -157,6 +160,10 @@ public class LoginMainActivity extends AppCompatActivity {
 
                         }
                     });
+                }else{
+                    progressBar.setVisibility(View.GONE);
+                    btnLogin.setVisibility(View.VISIBLE);
+                    Toast.makeText(LoginMainActivity.this, "Incorrect UserEmail or Password", Toast.LENGTH_SHORT).show();
                 }
             }
         });
