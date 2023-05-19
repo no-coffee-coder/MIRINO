@@ -4,7 +4,7 @@
     <item
         android:id="@+id/gotoUsers"
         app:showAsAction="never"
-        android:title="@string/registered_users"/>
+        android:title="@string/registered_users" />
     <item
         android:id="@+id/gotoChangePasswordAdmin"
         app:showAsAction="never"
